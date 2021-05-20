@@ -1,472 +1,408 @@
-integration_mongolian_lands_category = {
-
-	MON_decision_integrate_tuva = {
+MON_power_struggle_cat = {
+	MON_increase_power_of_cho = {
 	
-		icon = generic_nationalism
-		
-		allowed = {
-			OR = {
-				original_tag = MON
-				original_tag = MEN
-				original_tag = TAN
-				original_tag = BUR
-			}
-			
-		}
+		icon = gre_faction_management
 
+		allowed = {
+		original_tag = SOV
+		has_goverment = communism
+		}
+		
+		fire_only_once = no
+		
 		visible = {
-			controls_state = 329
-			NOT = {
-				329 = { is_core_of = ROOT }
-			}
 		}
 		
 		available = {
-			controls_state = 329
-			NOT = {
-				329 = { is_core_of = ROOT }
-			}
+	check_variable = {
+    power_of_amar > 0
+	}
+	check_variable = {
+    power_of_cho < 100
+	}
 		}
 
-		highlight_states = { state = 329 }
+		cost = 25
 
-		cost = 50
-
-		days_remove = 60
-
-		cancel_if_not_visible = yes
-		
-		remove_effect = {
-			add_state_core = 329
-		}
-		
 		ai_will_do = {
 			factor = 10
+		}
+
+		complete_effect = {
+		custom_effect_tooltip = MON_increase_cho_tt
+		MON = {
+		add_to_variable = {
+		var = power_of_cho
+		value = 10
+		}
+		
+		add_to_variable = {
+		var = power_of_amar
+		value = -10
+		}
+		}
+		SOV = {
+		add_to_variable = {
+		var = power_of_cho
+		value = 10
+		}
+		
+		add_to_variable = {
+		var = power_of_amar
+		value = -10
+		}
+		}
+		
 		}
 	}
-
-	MON_decision_integrate_mongolia = {
+	MON_increase_power_of_amar = {
 	
-		icon = generic_nationalism
-		
-		allowed = {
-			OR = {
-				original_tag = MON
-				original_tag = MEN
-				original_tag = BUR
-			}
-			
-		}
+		icon = gre_faction_management
 
+		allowed = {
+		original_tag = MON
+		has_goverment = communism
+		}
+		
+		fire_only_once = no
+		
 		visible = {
-			controls_state = 330
-			NOT = {
-				330 = { is_core_of = ROOT }
-			}
-			controls_state = 848
-			NOT = {
-				848 = { is_core_of = ROOT }
-			}
-			controls_state = 849
-			NOT = {
-				849 = { is_core_of = ROOT }
-			}
-			controls_state = 850
-			NOT = {
-				850 = { is_core_of = ROOT }
-			}
 		}
 		
 		available = {
-			controls_state = 330
-			NOT = {
-				330 = { is_core_of = ROOT }
-			}
-			controls_state = 848
-			NOT = {
-				848 = { is_core_of = ROOT }
-			}
-			controls_state = 849
-			NOT = {
-				849 = { is_core_of = ROOT }
-			}
-			controls_state = 850
-			NOT = {
-				850 = { is_core_of = ROOT }
-			}
-		}
-
-		highlight_states = {
-			state = 330
-			state = 848
-			state = 849
-			state = 850
+	check_variable = {
+    power_of_cho > 0
+	}
+	check_variable = {
+    power_of_amar < 100
+	}
 		}
 
 		cost = 50
 
-		days_remove = 60
-
-		cancel_if_not_visible = yes
-		
-		remove_effect = {
-			add_state_core = 330
-			add_state_core = 848
-			add_state_core = 849
-			add_state_core = 850
-		}
-		
 		ai_will_do = {
 			factor = 10
+		}
+
+		complete_effect = {
+		custom_effect_tooltip = MON_increase_amar_tt
+		
+		MON = {
+		add_to_variable = {
+		var = power_of_cho
+		value = -10
+		}
+		
+		add_to_variable = {
+		var = power_of_amar
+		value = 10
+		}
+		}
+		SOV = {
+		add_to_variable = {
+		var = power_of_cho
+		value = -10
+		}
+		
+		add_to_variable = {
+		var = power_of_amar
+		value = 10
+		}
+		}
+		
 		}
 	}
-
-	MON_decision_integrate_south_chahar = {
+	MON_purge_amar_dec = {
 	
-		icon = generic_nationalism
-		
-		allowed = {
-			OR = {
-				original_tag = MON
-				original_tag = MEN
-				original_tag = BUR
-			}
-			
-		}
+		icon = gre_faction_management
 
+		allowed = {
+		original_tag = SOV
+		has_goverment = communism
+		}
+		
+		fire_only_once = yes
+		
 		visible = {
-			controls_state = 611
-			NOT = {
-				611 = { is_core_of = ROOT }
-			}
 		}
 		
 		available = {
-			controls_state = 611
-			NOT = {
-				611 = { is_core_of = ROOT }
-			}
-		}
-
-		highlight_states = { state = 611 }
-
-		cost = 50
-
-		days_remove = 60
-
-		cancel_if_not_visible = yes
-		
-		remove_effect = {
-			add_state_core = 611
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
+		check_variable = {
+    power_of_cho > 80
 	}
-	MON_decision_integrate_north_chahar = {
-	
-		icon = generic_nationalism
-		
-		allowed = {
-			OR = {
-				original_tag = MON
-				original_tag = MEN
-				original_tag = BUR
-			}
-			
 		}
 
-		visible = {
-			controls_state = 612
-			NOT = {
-				612 = { is_core_of = ROOT }
-			}
-		}
-		
-		available = {
-			controls_state = 612
-			NOT = {
-				612 = { is_core_of = ROOT }
-			}
-		}
+		cost = 100
 
-		highlight_states = { state = 612 }
-
-		cost = 50
-
-		days_remove = 60
-
-		cancel_if_not_visible = yes
-		
-		remove_effect = {
-			add_state_core = 612
-		}
-		
 		ai_will_do = {
 			factor = 10
 		}
-	}
 
-	MON_decision_integrate_suiyuan = {
-	
-		icon = generic_nationalism
-		
-		allowed = {
-			OR = {
-				original_tag = MON
-				original_tag = MEN
-				original_tag = BUR
-			}
-			
+		complete_effect = {
+		MON = {
+		complete_national_focus = MON_amar_gets_purged 
+		SOV = {
+		set_autonomy = {
+		target = MON
+		autonomy_state = autonomy_puppet
+		}	
 		}
-
-		visible = {
-			controls_state = 621
-			NOT = {
-				621 = { is_core_of = ROOT }
-			}
 		}
-		
-		available = {
-			controls_state = 621
-			NOT = {
-				621 = { is_core_of = ROOT }
-			}
-		}
-
-		highlight_states = { state = 621 }
-
-		cost = 50
-
-		days_remove = 60
-
-		cancel_if_not_visible = yes
-		
-		remove_effect = {
-			add_state_core = 621
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-
-	MON_decision_integrate_ordos = {
-	
-		icon = generic_nationalism
-		
-		allowed = {
-			OR = {
-				original_tag = MON
-				original_tag = MEN
-				original_tag = BUR
-			}
-			
-		}
-
-		visible = {
-			controls_state = 746
-			NOT = {
-				746 = { is_core_of = ROOT }
-			}
-		}
-		
-		available = {
-			controls_state = 746
-			NOT = {
-				746 = { is_core_of = ROOT }
-			}
-		}
-
-		highlight_states = { state = 746 }
-
-		cost = 50
-
-		days_remove = 60
-
-		cancel_if_not_visible = yes
-		
-		remove_effect = {
-			add_state_core = 746
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-
-	MON_decision_integrate_jiuquan = {
-	
-		icon = generic_nationalism
-		
-		allowed = {
-			OR = {
-				original_tag = MON
-				original_tag = MEN
-				original_tag = BUR
-			}
-			
-		}
-
-		visible = {
-			controls_state = 756
-			NOT = {
-				756 = { is_core_of = ROOT }
-			}
-		}
-		
-		available = {
-			controls_state = 756
-			NOT = {
-				756 = { is_core_of = ROOT }
-			}
-		}
-
-		highlight_states = { state = 756 }		
-
-		cost = 50
-
-		days_remove = 60
-
-		cancel_if_not_visible = yes
-		
-		remove_effect = {
-			add_state_core = 756
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-
-	MON_decision_integrate_buryatia = {
-	
-		icon = generic_nationalism
-		
-		allowed = {
-			OR = {
-				original_tag = MON
-				original_tag = MEN
-				original_tag = BUR
-			}
-			
-		}
-
-		visible = {
-			controls_state = 564
-			NOT = {
-				564 = { is_core_of = ROOT }
-			}
-		}
-		
-		available = {
-			controls_state = 564
-			NOT = {
-				564 = { is_core_of = ROOT }
-			}
-		}
-
-		highlight_states = { state = 564 }
-
-		cost = 50
-
-		days_remove = 60
-
-		cancel_if_not_visible = yes
-		
-		remove_effect = {
-			add_state_core = 564
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	MON_decision_integrate_irkutsk = {
-	
-		icon = generic_nationalism
-		
-		allowed = {
-			OR = {
-				original_tag = MON
-				original_tag = MEN
-				original_tag = BUR
-			}
-			
-		}
-
-		visible = {
-			controls_state = 566
-			NOT = {
-				566 = { is_core_of = ROOT }
-			}
-		}
-		
-		available = {
-			controls_state = 566
-			NOT = {
-				566 = { is_core_of = ROOT }
-			}
-		}
-
-		highlight_states = { state = 566 }
-
-		cost = 50
-
-		days_remove = 60
-
-		cancel_if_not_visible = yes
-		
-		remove_effect = {
-			add_state_core = 566
-		}
-		
-		ai_will_do = {
-			factor = 10
 		}
 	}
 }
-propaganda_efforts = {
-	MON_go_on_pilgrimage_to_the_burkhan_khaldun = {
-	
-		icon = generic_nationalism
-		
-		allowed = {
-			OR = {
-				original_tag = MON
-				original_tag = TUV
-				original_tag = MEN
-				original_tag = BUR
-			}
-			
-		}
 
+
+
+
+
+
+
+
+
+
+
+
+
+MON_inner_mon_cat = {
+MON_reclaim_dabacheng = {  #760
+	
+		icon = gre_faction_management
+
+		allowed = {
+		original_tag = MON
+		MON = {NOT = {controls_state = 760 } }
+		}
+		
+		fire_only_once = yes
+		
 		visible = {
-			849 = { is_core_of = ROOT }
-			has_government = fascism
-			
 		}
 		
 		available = {
-			controls_state = 849
-			has_war_support > 0.5
+		760 = {
+		has_dynamic_modifier = { modifier = MON_inner_mon }
+		controller = {
+		OR = {
+		is_in_faction_with = JAP
+		tag = JAP
+		}
+		}
+		}
 		}
 
-		highlight_states = { state = 849 }
+		cost = 0
 
-		cost = 60
-
-		days_remove = 60
-
-		cancel_if_not_visible = yes
-		
-		remove_effect = {
-			add_country_leader_trait = spirit_of_genghis
-		}
-		
 		ai_will_do = {
 			factor = 10
+		}
+
+		complete_effect = {
+		760 = {
+		remove_dynamic_modifier = { modifier = MON_inner_mon }
+		}
+		transfer_State = 760
+		
+		}
+	}
+MON_reclaim_jiuguan = {  #756
+	
+		icon = gre_faction_management
+
+		allowed = {
+		original_tag = MON
+		MON = {NOT = {controls_state = 756 } }
+		}
+		
+		fire_only_once = yes
+		
+		visible = {
+		}
+		
+		available = {
+		756 = {
+		has_dynamic_modifier = { modifier = MON_inner_mon }
+		controller = {
+		OR = {
+		is_in_faction_with = JAP
+		tag = JAP
+		}
+		}
+		}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+		756 = {
+		remove_dynamic_modifier = { modifier = MON_inner_mon }
+		}
+		transfer_State = 756
+		
+		}
+	}
+MON_reclaim_siuyuan = {  #621
+	
+		icon = gre_faction_management
+
+		allowed = {
+		original_tag = MON
+		MON = {NOT = {controls_state = 621 } }
+		}
+		
+		fire_only_once = yes
+		
+		visible = {
+		}
+		
+		available = {
+		621 = {
+		has_dynamic_modifier = { modifier = MON_inner_mon }
+		controller = {
+		OR = {
+		is_in_faction_with = JAP
+		tag = JAP
+		}
+		}
+		}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+		621 = {
+		remove_dynamic_modifier = { modifier = MON_inner_mon }
+		}
+		transfer_State = 621
+		
+		}
+	}
+MON_reclaim_south_chorar = {  #611
+	
+		icon = gre_faction_management
+
+		allowed = {
+		original_tag = MON
+		MON = {NOT = {controls_state = 611 } }
+		}
+		
+		fire_only_once = yes
+		
+		visible = {
+		}
+		
+		available = {
+		611 = {
+		has_dynamic_modifier = { modifier = MON_inner_mon }
+		controller = {
+		OR = {
+		is_in_faction_with = JAP
+		tag = JAP
+		}
+		}
+		}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+		611 = {
+		remove_dynamic_modifier = { modifier = MON_inner_mon }
+		}
+		transfer_State = 611
+		
+		}
+	}
+MON_reclaim_chorar = {  #612
+	
+		icon = gre_faction_management
+
+		allowed = {
+		original_tag = MON
+		MON = {NOT = {controls_state = 612 } }
+		}
+		
+		fire_only_once = yes
+		
+		visible = {
+		}
+		
+		available = {
+		612 = {
+		has_dynamic_modifier = { modifier = MON_inner_mon }
+		controller = {
+		OR = {
+		is_in_faction_with = JAP
+		tag = JAP
+		}
+		}
+		}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+		612 = {
+		remove_dynamic_modifier = { modifier = MON_inner_mon }
+		}
+		transfer_State = 612
+		
+		}
+	}
+MON_reclaim_hulunbuir = {  #761
+	
+		icon = gre_faction_management
+
+		allowed = {
+		original_tag = MON
+		MON = {NOT = {controls_state = 761 } }
+		}
+		
+		fire_only_once = yes
+		
+		visible = {
+		}
+		
+		available = {
+		761 = {
+		has_dynamic_modifier = { modifier = MON_inner_mon }
+		controller = {
+		OR = {
+		is_in_faction_with = JAP
+		tag = JAP
+		}
+		}
+		}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+		761 = {
+		remove_dynamic_modifier = { modifier = MON_inner_mon }
+		}
+		transfer_State = 761
+		
 		}
 	}
 }

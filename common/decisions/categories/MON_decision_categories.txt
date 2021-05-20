@@ -1,114 +1,27 @@
-integration_mongolian_lands_category = {
+MON_power_struggle_cat = {
+	priority = 300
+	icon = gre_faction_management
 
-	picture = generic_border_conflicts
-	
 	allowed = {
-		OR = {
-			original_tag = MON
-			original_tag = MEN
-			original_tag = BUR
-		}
+	MON = {is_in_faction_with = SOV}
+	MON = { NOT = { has_completed_focus = MON_amar_gets_purged } }
+	MON = { NOT = { has_completed_focus = MON_support_genden } }
+	MON = { NOT = { has_completed_focus = MON_eliminate_amar_supporters } }
+	OR = {
+		original_tag = MON
+		original_tag = SOV
 	}
-	
-	visible = {
-		OR = {
-			AND = {
-				controls_state = 329
-				NOT = {
-					329 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 330
-				NOT = {
-					330 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 848
-				NOT = {
-					848 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 849
-				NOT = {
-					849 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 850
-				NOT = {
-					850 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 611
-				NOT = {
-					611 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 612
-				NOT = {
-					612 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 621
-				NOT = {
-					621 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 746
-				NOT = {
-					746 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 756
-				NOT = {
-					756 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 564
-				NOT = {
-					564 = {
-						is_core_of = ROOT
-					}
-				}
-			}
-			AND = {
-				controls_state = 566
-				NOT = {
-					566 = {
-						is_core_of = ROOT
-					}
-				}
-			}						
-		}		
+	MON = {has_goverment = communism}
+	SOV = {has_goverment = communism}
 	}
-	icon = generic_independence
+}
+MON_inner_mon_cat = {
+	priority = 290
+	icon = gre_faction_management
+	picture = GFX_decision_cat_picture_inner
+
+	allowed = {
+	has_global_flag = JAP_MON_inner_accept
+	original_tag = MON
+	}
 }

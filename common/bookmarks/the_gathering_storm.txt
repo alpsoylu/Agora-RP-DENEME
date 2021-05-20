@@ -232,35 +232,31 @@ bookmarks = {
 			}
 		}
 		
-		"RAJ" = {
+		"SYR" = {
 			minor = yes
-			history = "RAJ_GATHERING_STORM_DESC"
+			history = "SYR_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				RAJ_agrarian_economy
-				RAJ_Caste_Debuff_3
-				RAJ_Princely_States
+				french_mandate
 			}
 			focuses = {
-				RAJ_Linlithgows_Reign
-				RAJ_A_New_Way_Forward
-				RAJ_A_Society_of_All_Classes
+				SYR_franco_syrian_treaty
+				SYR_annex_alexandreta
+				SYR_legacy_of_faisal
 			}
 		}
 		
-		"CAN" = {
+		"MON" = {
 			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
+			history = "MON_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				r56_CAN_quebec_conscription_idea
-				r56_CAN_great_depression_01
-				r56_CAN_volunteers_01
+				MON_soviet_influence
 			}
 			focuses = {
-				r56_CAN_conscription_crisis
-				r56_CAN_forge_our_own_future
-				r56_CAN_governor_general_in_power
+				MON_deal_for_inner_mongolia
+				MON_support_choibalsan
+				MON_support_genden
 			}
 		}
 		

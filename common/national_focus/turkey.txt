@@ -740,6 +740,11 @@ focus_tree = {
 		ai_will_do = {
 			base = 10
 		}
+		available = {
+		HAT = {
+		controls_state = 799
+		}
+		}
 
 		bypass = {
 			TUR = { owns_state = 799 }
@@ -747,21 +752,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			if = {
-				limit = {
-					FRA = { owns_state = 799 }
-				}
-				FRA = { country_event = { id = bftb_turkey.25 hours = 6 } }
-			}
-			else = {
-				random_neighbor_country = { 
-					limit = {
-						owns_state = 799
-					}
-					country_event = { id = bftb_turkey.60 hours = 6 } 
-				}
-			}
-			add_war_support = 0.05
+		annex_country = {
+    target = HAT
+    transfer_troops = yes
+}
+HAT = {
+remove_state_core = 799
+}
 		}
 	}
 
@@ -2898,8 +2895,6 @@ focus_tree = {
 				controller = {
 					if = {
 						limit = {
-							controls_state = 554
-							controls_state = 553
 							controls_state = 680
 						}
 						country_event = { id = bftb_turkey.102 }
@@ -10563,4 +10558,5 @@ focus_tree = {
 			}
 		}
 	}
+
 }

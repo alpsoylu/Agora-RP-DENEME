@@ -1944,9 +1944,6 @@ country_event = {
 		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
 		surrender_progress > 0.7
-		NOT = {
-			country_exists = OCC
-		}
 		GER = {
 			OR = {
 				is_faction_leader = yes
@@ -2362,6 +2359,39 @@ country_event = {
 					}
 					if = {
 						limit = {
+							677 = {
+								owner = { original_tag = SYR }
+								controller = { 
+									original_tag = SYR
+								}
+							}
+						}
+						SYR = { country_event = { id = rp_syr.3 hours = 12} }
+					}
+					if = {
+						limit = {
+							861 = {
+								owner = { original_tag = FRA }
+								controller = { 
+									original_tag = FRA
+								}
+							}
+						}
+						set_state_controller = 861
+					}
+					if = {
+						limit = {
+							860 = {
+								owner = { original_tag = FRA }
+								controller = { 
+									original_tag = FRA
+								}
+							}
+						}
+						set_state_controller = 860
+					}
+					if = {
+						limit = {
 							680 = {
 								owner = { original_tag = FRA }
 								controller = { 
@@ -2436,7 +2466,7 @@ country_event = {
 				ideology = fascism
 				size = 0.9
 				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 860 459 460 665 553 272 556 543 706 708 713 268 557 514 515 776 777 778 779 780 781 782 786 694 }
+				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 776 777 778 779 780 781 782 786 694 }
 				states_filter = {
 					owner = { original_tag = FRA }
 					OR = {		
@@ -2755,7 +2785,7 @@ country_event = {
 				ideology = neutrality
 				size = 0.5
 				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 860 459 460 665 553 272 556 543 706 708 713 268 557 514 515 694 }
+				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 694 }
 				states_filter = {
 					owner = { original_tag = FRA }
 					OR = {		
