@@ -933,7 +933,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUS_road_the_the_black_sea
-		icon = GFX_goal_generic_road2
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = AUS_transylvanian_highways_project }
 		x = 7
 		y = 3
@@ -1413,7 +1413,7 @@ focus_tree = {
 	
 	focus = { 
 		id = AUS_balkan_highways_project
-		icon = GFX_goal_generic_road
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = AUS_extend_the_grossglockner_highway }
 		x = 11
 		y = 6
@@ -3925,15 +3925,7 @@ focus_tree = {
 		}
 		
 		bypass = {
-			OR = {
-				NOT = { country_exists = GER }
-				GER = {
-					NOT = {
-						has_government = fascism
-					}
-				}
-			}
-			
+			NOT = { country_exists = GER }
 		}
 		
 		available_if_capitulated = no
@@ -4351,7 +4343,7 @@ focus_tree = {
 		completion_reward = {
 			HUN = {
 				if = {
-					limit = { has_country_leader = { name = "Miklós Horthy" ruling_only = yes } }
+					limit = { has_country_leader = { name = "Miklós Horthy" } }
 					kill_country_leader = yes
 					set_global_flag = horthy_died
 				}
@@ -5470,50 +5462,20 @@ focus_tree = {
 		cancel_if_invalid = yes
 		
 		available = {
-			NOT = {
-				has_civil_war = yes
+			ROM = {
+				owns_state = 84
 			}
-			any_other_country = {
-				OR = {
-					owns_state = 84
-					owns_state = 76
-					owns_state = 82
-					owns_state = 83
-				}	
-			}
-			OR = {
-				controls_state = 154
-				controls_state = 764
-			}
-			
-			has_capitulated = no
+			is_neighbor_of = ROM
 		}
 		
 		bypass = {
 			owns_state = 84
 		}
-		will_lead_to_war_with = ROM
+
 
 		completion_reward = {
-			every_country = {
-				limit = {
-					OR = {
-						owns_state = 84
-						owns_state = 76
-						owns_state = 82
-						owns_state = 83
-					}
-					NOT = {
-						OR = {
-							is_puppet_of = ROOT
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				country_event = { id = austria.5018 days = 1 }
-			}
 			ROM = {
-				
+				country_event = { id = austria.5018 days = 1 }
 			}
 		}
 	}
@@ -6357,9 +6319,6 @@ focus_tree = {
 				remove_from_faction = AUS
 				create_wargoal = { type = annex_everything target = AUS 
 				expire = 0}
-			}
-			set_rule = {
-				can_create_factions = yes
 			}
 			AUS = {
 				create_faction = "austria_fascist_faction"

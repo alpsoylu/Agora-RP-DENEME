@@ -1669,7 +1669,7 @@ focus = {
 		id = bra_mod_mad_mamo
 		prerequisite = { focus = bra_obras_exterior }
 		relative_position_id = bra_obras_exterior
-		icon = GFX_goal_generic_road2
+		icon = GFX_goal_COG_Jungle_Railroad
 		x = 0
 		y = 1
 		cost = 10
@@ -1712,7 +1712,7 @@ focus = {
 	}
 	focus = {
 		id = bra_mod_soroc
-		icon = GFX_goal_generic_road
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = bra_mod_mad_mamo }
 		relative_position_id = bra_mod_mad_mamo
 		x = 0
@@ -3085,9 +3085,6 @@ focus = {
 			every_other_country = {
 				limit = {
 					capital_scope = { is_on_continent = south_america }
-					NOT = {
-						has_war_with = ROOT
-					}
 				}
 				add_timed_idea = { idea = nationalism days = 365 }
 			}

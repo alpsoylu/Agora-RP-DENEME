@@ -30,17 +30,17 @@ BHU_AI_BHU_screw_the_UK = {
 	ai_strategy = {
 		type = dont_join_wars_with
 		id = "ENG"
-		value = 999
+		value = 500
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = "ENG"
-		value = 999
+		value = 500
 	}
 	ai_strategy = {
 		type = support
 		id = "ENG"
-		value = -999
+		value = -500
 	}
 }
 
@@ -75,11 +75,6 @@ BHU_AI_BHU_contact_chinese_communists = {
 		id = "PRC"
 		value = 100
 	}
-	ai_strategy = {
-		type = alliance
-		id = "PRC"
-		value = 100
-	}
 }
 BHU_AI_BHU_contact_the_soviets = {
 	enable = {
@@ -93,12 +88,6 @@ BHU_AI_BHU_contact_the_soviets = {
 	}
 	ai_strategy = {
 		type = befriend
-		id = "SOV"
-		value = 100
-	}
-
-	ai_strategy = {
-		type = alliance
 		id = "SOV"
 		value = 100
 	}
@@ -135,12 +124,6 @@ BHU_AI_BHU_dragons_storm = {
 	}
 
 	ai_strategy = {
-		type = alliance
-		id = "JAP"
-		value = 100
-	}
-
-	ai_strategy = {
 		type = support
 		id = "SOV"
 		value = 100
@@ -148,8 +131,8 @@ BHU_AI_BHU_dragons_storm = {
 
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "JAP"
-		value = 35
+		id = "SOV"
+		value = 25
 	}
 
 }
@@ -173,13 +156,13 @@ BHU_AI_BHU_attack_the_plateau = {
 	ai_strategy = {
 		type = declare_war
 		id = "TIB"
-		value = 125
+		value = 100
 	}
 
 	ai_strategy = {
 		type = conquer
 		id = "TIB"
-		value = 45
+		value = 30
 	}
 
 }

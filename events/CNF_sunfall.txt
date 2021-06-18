@@ -188,7 +188,9 @@ country_event = {
 			add_ideas = sino_jap_war_fail_naisen
 			if = {
 				limit = {
-					524 = { is_controlled_by = CHI }
+					NOT = {
+						CHI = { is_in_faction_with = JAP }
+					}
 				}
 				CHI = {
 					transfer_state = 524

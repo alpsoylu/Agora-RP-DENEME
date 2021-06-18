@@ -23,7 +23,7 @@ ideas = {
 			}
 		}
 		PAK_Ally_the_Army = {
-			picture = PAK_ally_the_army
+			picture = mex_politicised_army
 			modifier = {
 				command_power_gain = 0.5
 				max_command_power = 50

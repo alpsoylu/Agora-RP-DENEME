@@ -56,8 +56,7 @@ intelligence_agency = {
 }
 intelligence_agency = {
 
-	#picture = GFX_intelligence_agency_logo_rus Deactivated if it helps a bit
-	picture = GFX_intelligence_agency_logo_generic_3
+	picture = GFX_intelligence_agency_logo_rus
 	names = { "Okhrana"  }
 	
 	default = { tag = SOV }
@@ -487,18 +486,6 @@ intelligence_agency = {
 	default = { tag = BUL }
 	available = { original_tag = BUL }
 }
-
-intelligence_agency = {
-	
-	picture = GFX_r56_agency_logo_2
-	names = { "MALG" }
-
-	available = { always = yes }
-	
-	default = { tag = ALG }
-	available = { original_tag = ALG }
-}
-
 #intelligence_agency = {
 #	
 #	picture = GFX_intelligence_agency_logo_generic_2

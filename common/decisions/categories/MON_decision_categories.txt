@@ -11,8 +11,6 @@ MON_power_struggle_cat = {
 		original_tag = MON
 		original_tag = SOV
 	}
-	MON = {has_goverment = communism}
-	SOV = {has_goverment = communism}
 	}
 }
 MON_inner_mon_cat = {

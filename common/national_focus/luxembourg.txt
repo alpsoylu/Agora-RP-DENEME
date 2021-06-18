@@ -2435,13 +2435,13 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4
+			factor = 0.1
 			modifier = {
-				add = 7
-				date > 1939.2.1
+				factor = 11
+				date > 1939.5.1
 				GER = {
 					has_government = fascism
-					is_ai = yes
+					is_ai = no
 				}
 			}
 		}
@@ -2486,7 +2486,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		available = {

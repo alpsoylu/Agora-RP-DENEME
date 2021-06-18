@@ -766,21 +766,15 @@ focus_tree = {
 
 		available = {
 
-			any_country = {
-				OR = {
-					original_tag = PRC
-					original_tag = CHI
-					original_tag = SIK
-					original_tag = XSM
-					original_tag = TIB
-					original_tag = SHX
-					original_tag = YUN
-				}
+			any_other_country = {
+				is_literally_china = yes
+				is_major = yes
 				NOT = {
 					has_government = fascism
 				}
 				is_faction_leader = yes
 				NOT = { has_war_with = ROOT }
+				has_war_with = JAP
 			}
 			is_subject = no
 			
@@ -799,22 +793,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_country = {
+			random_other_country = {
 				limit = {
-					OR = {
-						original_tag = PRC
-						original_tag = CHI
-						original_tag = SIK
-						original_tag = XSM
-						original_tag = TIB
-						original_tag = SHX
-						original_tag = YUN
-					}
+					is_literally_china = yes
+					is_major = yes
 					NOT = {
 						has_government = fascism
 					}
 					is_faction_leader = yes
-					NOT = { has_war_with = ROOT }					
+					NOT = { has_war_with = ROOT }
+					has_war_with = JAP					
 				}
 				add_offsite_building = { 
 					type = arms_factory level = 1
@@ -842,7 +830,7 @@ focus_tree = {
 
 		available = {
 
-			any_country = {
+			any_other_country = {
 				is_literally_china = yes
 				is_major = yes
 				NOT = {
@@ -850,6 +838,7 @@ focus_tree = {
 				}
 				is_faction_leader = yes
 				NOT = { has_war_with = ROOT }
+				has_war_with = JAP
 			}
 			is_subject = no
 			is_in_faction = no
@@ -869,22 +858,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_country = {
+			random_other_country = {
 				limit = {
-					OR = {
-						original_tag = PRC
-						original_tag = CHI
-						original_tag = SIK
-						original_tag = XSM
-						original_tag = TIB
-						original_tag = SHX
-						original_tag = YUN
-					}
+					is_literally_china = yes
+					is_major = yes
 					NOT = {
 						has_government = fascism
 					}
 					is_faction_leader = yes
-					NOT = { has_war_with = ROOT }					
+					NOT = { has_war_with = ROOT }
+					has_war_with = JAP					
 				}
 				country_event = generic.2
 				

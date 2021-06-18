@@ -240,10 +240,10 @@ JAP_interservice_rivalry = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -257,10 +257,10 @@ JAP_interservice_rivalry = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -865,7 +865,7 @@ foreign_politics = {
 JAP_southern_expansion = {
 
 	JAP_pressure_france = { 
-		icon = eng_trade_unions_demand
+
 		available = {
 			16 = { NOT = { is_controlled_by = FRA } } #Paris has fallen
 			286 = { 
@@ -1486,7 +1486,7 @@ political_actions = {
 operations = {
 	
 	JAP_tora_tora_tora = {
-		icon = generic_air
+
 		allowed = {
 			original_tag = JAP
 		}

@@ -25,7 +25,7 @@ set_technology = {
 }
 
 
-set_cosmetic_tag = LEB_mandate
+set_cosmetic_tag = LEB_FRA
 
 1939.1.1 = {
 

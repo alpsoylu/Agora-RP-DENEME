@@ -4,12 +4,6 @@ on_actions = {
 			MON = { country_event = { id = rp_mon.2 days = 7} }
 				set_variable = { var = power_of_cho value = 30 }
 				set_variable = { var = power_of_amar value = 70 }
-				FRA = {
-				set_autonomy = {
-		target = SYR
-		autonomy_state = autonomy_colony
-		}
-		}
 		}
 	}
 	on_weekly_MON = {

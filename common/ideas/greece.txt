@@ -2905,7 +2905,7 @@ ideas = {
 		}
 
 		GRE_semi_constitutional_monarchy = {
-			picture = GRE_semi_constitutional_monarchy
+			picture = generic_king_handled
 			allowed = {
 				always = no
 			}
@@ -2922,7 +2922,7 @@ ideas = {
 		}
 
 		GRE_strong_kingdom = {
-			picture = GRE_strong_monarchy
+			picture = ast_abandon_the_westminster_system
 			allowed = {
 				always = no
 			}
@@ -5184,12 +5184,7 @@ GRE_opla = {
 
 		pyrkal = {
 			allowed = { original_tag = GRE }
-			available = { 
-				OR = {
-					has_completed_focus = GRE_infantry_weapons
-					has_completed_focus = GRE_the_backbone_of_our_army
-				}
-			}
+			available = { has_completed_focus = GRE_infantry_weapons}
 			traits = { infantry_equipment_producer_offense_1 }
 			modifier = {}
 			research_bonus = {

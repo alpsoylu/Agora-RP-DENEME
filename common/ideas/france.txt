@@ -5264,11 +5264,7 @@ ideas = {
 			}
 			available = {
 				NOT = { has_country_flag = dakar_nat }
-				OR = {
-					owns_state = 272
-					SEN = { is_subject_of = FRA }
-				}
-				
+				owns_state = 272
 			}	
 			research_bonus = {
 				naval_equipment = 0.10

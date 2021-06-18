@@ -107,7 +107,7 @@ guiTypes = {
 			position = { x = 16 y = 18 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CONTINUE"
-			buttonFont = "hoi_24header"
+			buttonFont = "cg_18b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -149,7 +149,7 @@ guiTypes = {
 			position = { x = 16 y = 58 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_NEW"
-			buttonFont = "hoi_24header"
+			buttonFont = "cg_18b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -159,7 +159,7 @@ guiTypes = {
 			position = {  x = 16 y = 98 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_LOAD"
-			buttonFont = "hoi_24header"
+			buttonFont = "cg_18b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -169,7 +169,7 @@ guiTypes = {
 			position = { x = 16 y = 138}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_TUTORIAL"
-			buttonFont = "hoi_24header"
+			buttonFont = "cg_18b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -179,7 +179,7 @@ guiTypes = {
 			position = { x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "BACK"
-			buttonFont = "hoi_24header"
+			buttonFont = "cg_18b"
 			clicksound = click_close
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"
@@ -203,7 +203,7 @@ guiTypes = {
 			name = "single_player_button"
 			position = { x = 16 y = 18 }
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
+			font = "cg_18b"			
 			text = "FE_SINGLE_PLAYER"				
 			clicksound = click_default			
 			oversound = ui_menu_over
@@ -213,7 +213,7 @@ guiTypes = {
 			name = "multi_player_button"
 			position = { x = 16 y = 58}
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
+			font = "cg_18b"			
 			text = "FE_MULTI_PLAYER"			
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -245,7 +245,7 @@ guiTypes = {
 			position = { x = 16 y = 98 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "OPTIONS"
-			buttonFont = "hoi_24header"
+			buttonFont = "cg_18b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -256,7 +256,7 @@ guiTypes = {
 			position = {  x = 16 y = 138 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CREDITS"
-			buttonFont = "hoi_24header"
+			buttonFont = "cg_18b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -266,18 +266,7 @@ guiTypes = {
 			position = { x = 16 y = 178 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
-			buttonFont = "hoi_24header"
-		}
-
-		ButtonType = {
-			name = "discord_button"
-			position = { x = 16 y = 218 }
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "Agora Discord"
-			buttonFont = "hoi_24header"
-			web_link = "https://discord.gg/qG6Qeqr"
-			clicksound = click_default
-			oversound = ui_menu_over
+			buttonFont = "cg_18b"
 		}
 		
 
@@ -285,7 +274,7 @@ guiTypes = {
 			name = "exit_button"
 			position = { x = 16 y = 260 }
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
+			font = "cg_18b"			
 			text = "FE_EXIT"			
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -363,7 +352,7 @@ guiTypes = {
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"
-			web_link = "https://www.twitch.tv/maxmarine"
+			web_link = "http://forum.paradoxplaza.com/forum/forumdisplay.php?844-Hearts-of-Iron-IV"
 		}
 		ButtonType = {
 			name = "facebook_button"
@@ -371,7 +360,7 @@ guiTypes = {
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FACEBOOK"
-			web_link = "https://www.twitch.tv/valeriovenzo"
+			web_link = "https://discord.gg/Y5pegandZ8"
 		}
 		ButtonType = {
 			name = "twitter_button"
@@ -379,7 +368,7 @@ guiTypes = {
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
-			web_link = "https://www.twitch.tv/metinboskingtr"
+			web_link = "https://twitter.com/hoi_game"
 		}
 		ButtonType = {
 			name = "privacy_policy_button"
@@ -387,7 +376,6 @@ guiTypes = {
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
-			web_link = "https://docs.google.com/document/d/1CaRgym4eCVCECIC2OD0UeXzIznyxeOGpGGS8-ZTjBTk/edit"
 		}
 	}
 

@@ -16,7 +16,7 @@
  MON_strenghten_economic_ties_with_ussr:0 "Strenghten Economic Ties with USSR"
  MON_send_an_embassador_to_japan:0 "Send an Embassador to [JAP.GetName]"
  MON_deal_for_inner_mongolia:0 "Deal for Inner Mongolia"
- MON_stalinist_revolution:0 "Stalinist Revolution"
+ MON_stalinist_revolution:0 "Spreading the Revolution"
  MON_join_jap_faction:0 "Join the [JAP.GetFactionName]"
  MON_deal_for_tannu_tuva:0 "Deal For [TAN.GetName]"
  MON_legacy_of_mongolian_wariors:0 "Legacy of Mongolian Warriors"
@@ -132,9 +132,39 @@
  MON_increase_power_of_cho:0 "Increase the Popularity of Choibalsan"
  MON_increase_power_of_amar:0 "Increase the Popularity of Anandyn Amar"
  MON_purge_amar_dec:0 "Purge Amar"
- MON_stalin_rev:0 "Stalinist Revolution"
- MON_trotsky_rev:0 "Stalinist Revolution"
+ MON_stalin_rev:0 "Spreading the Revolution"
+ MON_trotsky_rev:0 "Spreading the Revolution"
  
  MON_increase_cho_tt:0 "§YPopularity§! of §OChoibalsan§! will §Yincrease!§!"
  MON_increase_amar_tt:0 "§YPopularity§! of §OAnandyn Amar§! will §Yincrease!§!"
  MON_eliminate_tt:0 "The §OPower Struggle§! between §YAmar§! and §YChoibalsan§! will end."
+ MON_greater:0 "Greater Mongolia"
+ MON_greater_DEF:0 "Greater Mongolia"
+ MON_greater_ADJ:0 "Mongolian"
+ ARG_unite_faction:0 "Unite La Patria Grande"
+ ARG_unite_faction_desc:0 "Unite La Patria Grande"
+ 
+ 
+ rp_arg.1:0 "[ARG.GetName] proposes a union"
+ rp_arg.1.t:0 "[ARG.GetName] proposes a union"
+ rp_arg.1.d:0 "[ARG.GetName] proposes a union between the members of [ARG.GetFactionName]"
+ rp_arg.1.a:0 "Accept it."
+ rp_arg.1.b:0 "Reject it."
+ 
+ rp_arg.2:0 "[FROM.GetName] accepts the union."
+ rp_arg.2.t:0 "[FROM.GetName] accepts the union."
+ rp_arg.2.d:0 "[FROM.GetName] accepts the union."
+ rp_arg.2.a:0 "Enjoyable."
+ 
+ rp_arg.3:0 "[FROM.GetName] rejects the union!"
+ rp_arg.3.t:0 "[FROM.GetName] rejects the union!"
+ rp_arg.3.d:0 "[FROM.GetName] rejects the union!"
+ rp_arg.3.a:0 "Not enjoyable."
+ 
+ 
+ 
+ akagi_tt:0 "AKAGI"
+ idea_sov_hidden_cons_buffs:0 "Soviet Balancing"
+ ger_cons_buff:0 "Kaiserliche Marine is Back"
+ SOV_bear_of_the_east:0 "Bear of the East"
+ sov_bear_buff:0 "Bear of the East"

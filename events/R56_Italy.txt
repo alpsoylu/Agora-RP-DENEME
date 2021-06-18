@@ -563,11 +563,9 @@ country_event = {
 
 	option = {
 		name = r56_italy.21.a
-		ITA = {
-			country_event = {
-				id = r56_italy.22
-				days = 1
-			}
+		country_event = {
+		    id = r56_italy.22
+		    days = 1
 		}
 	}
 
@@ -580,17 +578,13 @@ country_event = {
 					has_dlc = "Man the Guns"
 				}
 			}
-			ITA = {
-				set_autonomy = {
-					target = ALB
-					autonomous_state = autonomy_dominion
-					freedom_level = 0.4
-				}
+			set_autonomy = {
+				target = ALB
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.4
 			}
 			else = {
-				ITA = {
-					puppet = ALB
-				}	
+				puppet = ALB
 			}
 		}
 	}
@@ -605,7 +599,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = r56_italy.22.a
+	name = r56_italy.22.a
 		declare_war_on = {
 		    target = ALB
 		    type = annex_everything

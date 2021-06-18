@@ -33,13 +33,9 @@ country_event = {
 		#After MtG add anti submarine trait -Waffle
 		create_navy_leader = { 
 			name = "Gilbert Stephenson"
-			portrait_path = "gfx/leaders/r56_generic/r56_portrait_generic_admiral_europe_1.dds"
-			traits = { fleet_protector destroyer_leader }
+			gfx = GFX_ENG_Gilbert_Stephenson
+			traits = { superior_tactician }
 			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 2			
 		}
 	}
 }

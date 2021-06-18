@@ -1482,13 +1482,12 @@ focus = {
 	id = LIT_klaipda_shipyards
 	icon = GFX_goal_generic_construct_naval_dockyard
 	prerequisite = { focus = LIT_expansion_of_naval_facilities }
-	mutually_exclusive = {focus = LIT_ventoji_shipyards }
 
 	x = -1
 	y = 1
 	relative_position_id = LIT_expansion_of_naval_facilities
 
-	cost = 15
+	cost = 10
 
 	available_if_capitulated = yes
 
@@ -1500,26 +1499,20 @@ focus = {
 	available = {
 		188 = { is_owned_by= LIT }
 		has_full_control_of_state = 188
-		has_tech = advanced_machine_tools
 	}
 
 	completion_reward = {
 		188 = {
-			add_extra_state_shared_building_slots = 4
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = dockyard
-				level = 4
+				level = 3
 				instant_build = yes
 			}
 			add_building_construction = {
 				type = naval_base
-				level = 4
+				level = 3
 				province = 3288
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
 				instant_build = yes
 			}
 		}
@@ -1530,14 +1523,14 @@ focus = {
 focus = {
 	id = LIT_ventoji_shipyards
 	icon = GFX_goal_generic_construct_naval_dockyard
-	prerequisite = { focus = LIT_expansion_of_naval_facilities }
-	mutually_exclusive = {focus = LIT_klaipda_shipyards }
+	prerequisite = { focus = LIT_found_the_lithuanian_maritime_academy }
+	prerequisite = { focus = LIT_focus_on_destroyer_production }
 
-	x = 1
-	y = 1
+	x = 2
+	y = 5
 	relative_position_id = LIT_expansion_of_naval_facilities
 
-	cost = 15
+	cost = 10
 
 	available_if_capitulated = yes
 
@@ -1549,15 +1542,14 @@ focus = {
 	available = {
 			189 = { is_owned_by= LIT }
 			has_full_control_of_state = 189
-			has_tech = advanced_machine_tools
 	}
 
 	completion_reward = {
 		189 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = dockyard
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 			add_building_construction = {
@@ -1568,7 +1560,7 @@ focus = {
 			}
 			add_building_construction = {
 				type = infrastructure
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -1581,15 +1573,15 @@ focus = {
 	icon = GFX_focus_generic_navy_battleship2
 	cost = 5
 	available_if_capitulated = yes
+	mutually_exclusive = {focus = LIT_defend_the_coast }
 	
 	prerequisite = { 
-		focus = LIT_klaipda_shipyards
-		focus = LIT_ventoji_shipyards
+		focus = LIT_klaipda_shipyards 
 	}
 		
 	x = 0
-	y = 2
-	relative_position_id = LIT_expansion_of_naval_facilities
+	y = 1
+	relative_position_id = LIT_klaipda_shipyards
 		
 	ai_will_do = {
 		factor = 1
@@ -1614,7 +1606,6 @@ focus = {
 			category = cl_tech
 		}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
 }
 	
 focus = {
@@ -1622,11 +1613,11 @@ focus = {
 	icon = GFX_goal_generic_navy_anti_submarine
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = LIT_develop_indigenous_designs }
-	mutually_exclusive = {focus = LIT_raiding_fleet }
+	prerequisite = { focus = LIT_raiding_fleet }
+	mutually_exclusive = {focus = LIT_develop_indigenous_designs }
 	
-	x = -1
-	y = 3
+	x = 1
+	y = 2
 	relative_position_id = LIT_expansion_of_naval_facilities
 	
 	ai_will_do = {
@@ -1653,11 +1644,10 @@ focus = {
 		icon = GFX_goal_generic_navy_submarine
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LIT_develop_indigenous_designs }
-		mutually_exclusive = {focus = LIT_defend_the_coast }
+		prerequisite = { focus = LIT_expansion_of_naval_facilities }
 		
 		x = 1
-		y = 3
+		y = 1
 		relative_position_id = LIT_expansion_of_naval_facilities
 	
 		ai_will_do = {
@@ -1691,8 +1681,8 @@ focus = {
 	}
 	
 	x = 0
-	y = 4
-	relative_position_id = LIT_expansion_of_naval_facilities
+	y = 1
+	relative_position_id = LIT_develop_indigenous_designs
 	
 	ai_will_do = {
 		factor = 1
@@ -1706,7 +1696,6 @@ focus = {
 			category = ca_tech
 		}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
 }
 
 focus = {
@@ -1714,7 +1703,7 @@ focus = {
 	icon = GFX_goal_generic_navy_submarine
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = LIT_raiding_fleet }
+	prerequisite = { focus = LIT_defend_the_coast }
 	
 	x = 0
 	y = 2
@@ -1735,9 +1724,8 @@ focus = {
 	y = 7
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = LIT_defend_the_coast }
-	
-	x = 0
+	prerequisite = { focus = LIT_cruisers_development focus = LIT_streamline_submarine_production }
+	x = -1
 	y = 2
 	relative_position_id = LIT_defend_the_coast
 	
@@ -1778,26 +1766,25 @@ focus = {
 	}
 	completion_reward = {
 		add_tech_bonus = {
-			name = "Study Foreign Navies"
-			bonus = 1
-			uses = 1
-			category = ss_tech
-		}
-		add_tech_bonus = {
-			name = "Study Foreign Navies"
-			bonus = 1
-			uses = 1
-			category = dd_tech
-		}
-		add_tech_bonus = {
-			name = "Study Foreign Navies"
-			bonus = 1
-			uses = 1
-			category = cl_tech
-			category = ca_tech
-		}
+				name = "Study Foreign Navies"
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
+			add_tech_bonus = {
+				name = "Study Foreign Navies"
+				bonus = 1
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = "Study Foreign Navies"
+				bonus = 1
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
 }
 
 focus = {
@@ -1894,7 +1881,7 @@ focus = {
 focus = {
 	id = LIT_cooperate_with_maritime_organisations
 	icon = GFX_focus_generic_coastal_fort
-	cost = 5
+	cost = 10
 	available_if_capitulated = yes
 	prerequisite = { focus = LIT_educate_naval_officers_abroad }
 	
@@ -1906,7 +1893,14 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		navy_experience = 30
+		navy_experience = 15
+		
+		add_tech_bonus = {
+			name = "Naval Doctrine"
+			bonus = 1.0
+			uses = 1
+			category = naval_doctrine
+		}
 	}
 }
 
@@ -1915,7 +1909,7 @@ focus = {
 	icon = GFX_goal_generic_navy_doctrines_tactics
 	x = 8
 	y = 5
-	cost = 10
+	cost = 5
 	available_if_capitulated = yes
 	prerequisite = { focus = LIT_cooperate_with_maritime_organisations }
 	
@@ -1929,8 +1923,8 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = "Naval Doctrine"
-			bonus = 2.0
-			uses = 2
+			bonus = 1.0
+			uses = 1
 			category = naval_doctrine
 		}
 	}
@@ -2866,8 +2860,11 @@ focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		add_ideas = { LIT_foreign_aircraft_engines }
+		add_tech_bonus = {
+			add_ideas = { LIT_foreign_aircraft_engines }
+		}
 	}
+	search_filters = { FOCUS_FILTER_RESEARCH }
 }
 
 focus = {
@@ -2887,6 +2884,7 @@ focus = {
 		add_ideas = { LIT_pilot_training_facilities }
 		air_experience = 15
 	}
+	search_filters = { FOCUS_FILTER_RESEARCH }
 }
 
 
@@ -2922,7 +2920,7 @@ focus = {
 			}
 		}
 	}
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+	search_filters = { FOCUS_FILTER_RESEARCH }
  }
  focus = {
 	id = LIT_modernize_planes

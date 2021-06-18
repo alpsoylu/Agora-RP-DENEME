@@ -4,9 +4,22 @@ spriteTypes = {
 	name = "GFX_focus_nukleer"
 	texturefile = "gfx/interface/goals/newicons/focus_nukleer.dds"			
 	}
+
+	SpriteType = {
+	name = "GFX_idea_russian_bear"
+	texturefile = "gfx/interface/ideas/russian_bear.dds"			
+	}
+	spriteType = {
+		name = "GFX_modifiers_kuvayimilliye_dyn"
+		textureFile = "gfx/interface/state_modifiers/kuvayimilliye_icon.dds"
+	}
 	SpriteType = {
 	name = "GFX_focus_civil"
 	texturefile = "gfx/interface/goals/newicons/focus_civil.dds"			
+	}
+	SpriteType = {
+	name = "GFX_baltics"
+	texturefile = "gfx/interface/goals/newicons/baltics.dds"			
 	}
 	SpriteType = {
 	name = "GFX_focus_mussolini"
@@ -235,6 +248,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/newicons/monsov2.dds"			
 	}					
 	SpriteType = {
+	name = "GFX_arjantin_sun"
+	texturefile = "gfx/interface/goals/newicons/arjantin_sun.dds"			
+	}			
+	SpriteType = {
 	name = "GFX_mon_deal_with_jap"
 	texturefile = "gfx/interface/goals/newicons/mon_deal_with_jap.dds"			
 	}					
@@ -297,10 +314,10 @@ SpriteType = {
 	SpriteType = { 
 		name = "GFX_TUR_Civ"
 		texturefile = "gfx/interface/goals/TUR/GFX_TUR_Civ.dds"
-	}	
-	spriteType = {
-		name = "GFX_modifiers_kuvayimilliye_dyn"
-		textureFile = "gfx/interface/state_modifiers/kuvayimilliye_icon.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_attack_poland"
+		texturefile = "gfx/interface/goals/newicons/focus_attack_poland.dds"
 	}
 	
 }

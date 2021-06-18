@@ -1,33 +1,51 @@
 ﻿capital = 554
 
+oob = "SYR_1936"
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+	load_oob = camel_template
+}
 # Starting tech
 set_technology = {
+
+	# Extended Technologies
+	etax_doctrine = 1
+	camo = 1
+
+	
 	infantry_weapons = 1
 	gwtank = 1
 }
-ideas = {
-french_mandate
-}
-load_oob = SYR_1936
-set_cosmetic_tag = SYR_mandate
+
 set_convoys = 5
+set_war_support = 0.3
+set_stability = 0.6 
+set_research_slots = 4
 
 1939.1.1 = {
 
 	add_political_power = 1198
 	
 	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
+	complete_national_focus = ABC_establish_a_general_staff
+	 
+	complete_national_focus = ABC_motorization_effort
+	complete_national_focus = GEN_Aviation_Effort
+	complete_national_focus = GEN_Naval_Effort
+	complete_national_focus = GEN_Sea_Dominance
+	complete_national_focus = GEN_Industrial_Start
+	complete_national_focus = GEN_Expand_Infra
+	complete_national_focus = GEN_Military_Buildup
 	
 	set_technology = {
+
+		# Extended Technologies
+		etax_doctrine = 1
+		camo = 1
+	
 		tech_support = 1
 		tech_recon = 1
 		support_weapons = 1
@@ -52,6 +70,9 @@ set_convoys = 5
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -61,54 +82,41 @@ set_convoys = 5
 
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 55
+	democratic = 80
 	fascism = 10
 	communism = 10
-	neutrality = 25
 }
 
-create_country_leader = {
-	name = "Mohammed Ali Bey al-Abed"
-	desc = ""
-	picture = "gfx/leaders/SYR/al_abed.dds"
-	ideology = despotism
-	traits = {
-		#
+if = {
+	limit = { 
+		has_dlc = "Together for Victory" 
 	}
-}
-
-create_country_leader = {
-	name = "Antun Saadeh"
-	desc = ""
-	picture = "gfx/leaders/SYR/fasist.dds"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
+	add_to_tech_sharing_group = french_research
 }
 
 create_country_leader = {
 	name = "Hashim al-Atassi"
 	desc = ""
-	picture = "gfx/leaders/SYR/atassi.dds"
+	picture = "gfx/leaders/SYR/r56_portrait_SYR_Hashim_al_Atassi.dds"
 	ideology = liberalism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
-	name = Halid Bekdaş"
+	name = "Antun Saadeh"
 	desc = ""
-	picture = "gfx/leaders/SYR/comunist.dds"
-	ideology = marxism
-	traits = {
-		#
-	}
+	picture = "gfx/leaders/SYR/r56_portrait_SYR_Antun_Saadeh.dds"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+	name = "Khalid Bakdash"
+	desc = ""
+	picture = "gfx/leaders/SYR/r56_portrait_SYR_Khalid_Bakdash.dds"
+	ideology = leninism
 }

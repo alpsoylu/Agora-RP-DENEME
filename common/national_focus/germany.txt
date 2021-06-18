@@ -52,7 +52,7 @@ focus_tree = {
 		text = GER_naval_rearmament
 		x = 13
 		y = 0
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 16
 		}
@@ -81,15 +81,6 @@ focus_tree = {
 				add_building_construction = {
 					type = dockyard
 					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = {	has_state_flag = GER_naval_rearmament_1dockyard }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
 					instant_build = yes
 				}
 			}
@@ -141,7 +132,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_rearmament_r56
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 9
 		}
@@ -217,7 +208,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_effort_r56
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 8.1
 		}
@@ -455,6 +446,7 @@ focus_tree = {
 				uses = 1
 				category = cv_tech
 			}
+			add_ideas = ger_cons_buff
 		}
 	}
 
@@ -5313,7 +5305,7 @@ focus_tree = {
 	focus = {
 		id = GER_anti_comitern_pact
 		icon = GFX_goal_attack_communists
-		cost = 5
+		cost = 1
 		prerequisite = {
 			focus = GER_rhineland
 		}
@@ -5344,7 +5336,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-				add_political_power = 75
+				add_political_power = 25
 					SOV = {
 							add_opinion_modifier = {
 									target = ROOT
@@ -6501,7 +6493,7 @@ focus_tree = {
 	focus = {
 		id = GER_consolidate_new_reich
 		icon = GFX_focus_ger_revive_kaiserreich
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_a_new_reich
 		}
@@ -6626,7 +6618,7 @@ focus_tree = {
 	focus = {
 		id = GER_draft_new_constitution
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_consolidate_new_reich
 		}
@@ -6767,6 +6759,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = GER_return_scientists_idea
+					hidden_effect = {add_ideas = idea_ger_hidden_buffs}
 				}
 				search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER }
 

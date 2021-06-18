@@ -782,3 +782,8 @@ HAT_true = {
 	color = rgb { 172 190 152 }
 	color_ui = rgb { 223 247 198 }
 }
+
+MON_greater = {
+	color = rgb { 0 114 255 }
+	color_ui = rgb { 0 114 255 }
+}

@@ -261,26 +261,18 @@ form_gran_colombia_category = {
 		}
 
 		available = {
-			if = {
+		OR = {
+			is_subject = no
+			is_puppet_of = HON
+		}
+		if = {
 				limit = {
-					tag = PRU
+					is_subject = no
 				}
-				NOT = {
-					has_completed_focus = PRU_incaism
-				}
-			}
-			OR = {
-				is_subject = no
-				is_puppet_of = HON
-			}
-			if = {
-					limit = {
-						is_subject = no
-					}
-				controls_state = 490
-				controls_state = 491
-				controls_state = 304
-			}
+			controls_state = 490
+			controls_state = 491
+			controls_state = 304
+		}
 			# Ecuador
 			custom_trigger_tooltip = {
 				tooltip = form_country_ecuador_required_states_tt
@@ -1793,7 +1785,6 @@ form_ottoman_empire_category = {
 			controls_state = 459
 			controls_state = 460
 			controls_state = 513
-			controls_state = 860
 		}
 
 		visible = {
@@ -1808,7 +1799,6 @@ form_ottoman_empire_category = {
 			459 = { add_core_of = ROOT }
 			460 = { add_core_of = ROOT }
 			513 = { add_core_of = ROOT }
-			860 = { add_core_of = ROOT }
 			hidden_effect = {
 				set_global_flag = ottoman_tunisia_flag
 			}
@@ -2788,7 +2778,6 @@ form_roman_empire_category = {
 				controls_state = 665
 				controls_state = 460
 				controls_state = 513
-				controls_state = 860
 				controls_state = 459
 				controls_state = 461
 				# Syria
@@ -3033,7 +3022,6 @@ form_roman_empire_category = {
 				665 = { add_core_of = ROOT }
 				460 = { add_core_of = ROOT }
 				513 = { add_core_of = ROOT }
-				860 = { add_core_of = ROOT }
 				459 = { add_core_of = ROOT }
 				461 = { add_core_of = ROOT }
 				677 = { add_core_of = ROOT }
@@ -3817,8 +3805,6 @@ form_byzantine_empire_category = {
 				controls_state = 48
 				controls_state = 212
 				controls_state = 211
-				controls_state = 801 
-				#romanian Dobrudja
 			    controls_state = 77
 			    controls_state = 818	
 			}
@@ -3841,7 +3827,6 @@ form_byzantine_empire_category = {
 				48 = { add_core_of = ROOT }
 				212 = { add_core_of = ROOT }
 				211 = { add_core_of = ROOT }
-				801 = { add_core_of = ROOT }
 			# Romania
 			    77 = { add_core_of = ROOT }
 			    818 = { add_core_of = ROOT }
@@ -3881,29 +3866,24 @@ form_byzantine_empire_category = {
 			# Yugoslavia
 			custom_trigger_tooltip = {
 				tooltip = form_country_yugoslavia_required_states_tt
-				# macedonia #
-				controls_state = 106
-				controls_state = 813
-				# montenegro #
-				controls_state = 105
-				controls_state = 826
-				# serbia without vojvodina/west banat #
-				controls_state = 802
-				controls_state = 803
-				controls_state = 108
-				controls_state = 816
-				controls_state = 107
-				controls_state = 815	
-				# bosnia #
+				controls_state = 103
+				controls_state = 109
 				controls_state = 104
-				controls_state = 804
+				controls_state = 107
+				controls_state = 108
+				controls_state = 105
+				controls_state = 106
+				controls_state = 826
 				controls_state = 825
 				controls_state = 824
-				# croatia #
-				controls_state = 103
+				controls_state = 804
+				controls_state = 822
 				controls_state = 821
-				controls_state = 109
-				controls_state = 822				
+				controls_state = 816
+				controls_state = 815
+				controls_state = 802
+				controls_state = 813
+				controls_state = 803
 			}
 		}
 
@@ -3982,7 +3962,6 @@ form_byzantine_empire_category = {
 				controls_state = 346
 				controls_state = 345
 				controls_state = 356
-				controls_state = 798
 				controls_state = 348
 				controls_state = 344
 				controls_state = 355
@@ -4032,7 +4011,6 @@ form_byzantine_empire_category = {
 				346 = { add_core_of = ROOT }
 				345 = { add_core_of = ROOT }
 				356 = { add_core_of = ROOT }
-				798 = { add_core_of = ROOT }
 				348 = { add_core_of = ROOT }
 				344 = { add_core_of = ROOT }
 				355 = { add_core_of = ROOT }
@@ -4359,7 +4337,6 @@ form_arabia_category = {
 				controls_state = 665
 				controls_state = 460
 				controls_state = 513
-				controls_state = 860
 				controls_state = 459
 				controls_state = 461
 				controls_state = 462
@@ -4455,7 +4432,6 @@ form_arabia_category = {
 				665 = { add_core_of = ROOT }
 				460 = { add_core_of = ROOT }
 				513 = { add_core_of = ROOT }
-				860 = { add_core_of = ROOT }
 				459 = { add_core_of = ROOT }
 				461 = { add_core_of = ROOT }
 				677 = { add_core_of = ROOT }
@@ -4987,7 +4963,6 @@ form_andalusia_category = {
 				controls_state = 459
 				controls_state = 460
 				controls_state = 513
-				controls_state = 860
 				controls_state = 514
 				#Libya
 				controls_state = 273
@@ -5025,7 +5000,6 @@ form_andalusia_category = {
 				459 = { add_core_of = ROOT }
 				460 = { add_core_of = ROOT }
 				513 = { add_core_of = ROOT }
-				860 = { add_core_of = ROOT }
 				514 = { add_core_of = ROOT }
 				#Libya
 				273 = { add_core_of = ROOT }

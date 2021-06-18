@@ -558,11 +558,8 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
-
-			urban = {
-				movement = 0.05
-			}
 		}
+		
 		
 		path = {
 			leads_to_tech = tech_military_police3
@@ -737,10 +734,6 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
-			
-			desert = {
-				movement = 0.05
-			}
 		}
 		
 		
@@ -786,10 +779,6 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
-
-			forest = {
-				movement = 0.05
-			}
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
@@ -836,10 +825,6 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
-
-			jungle = {
-				movement = 0.05 
-			}
 		}
 		
 		path = {
@@ -936,10 +921,6 @@ technologies = {
 			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
 		}
-
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
-		}
 		
 		path = {
 			leads_to_tech = tech_field_hospital3
@@ -984,11 +965,6 @@ technologies = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
 		}
-
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
-		}
-
 		path = {
 			leads_to_tech = tech_field_hospital4
 			research_cost_coeff = 1
@@ -1033,10 +1009,6 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
-		}
-
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
 		}
 		
 		path = {
@@ -1085,12 +1057,11 @@ technologies = {
 		enable_subunits = {
 			logistics_company
 		}
-
+		
 		path = {
 			leads_to_tech = tech_logistics_company2
 			research_cost_coeff = 1
 		}
-
 
 		dependencies = {
 			motorised_infantry = 1
@@ -1141,10 +1112,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
 		}
-
-		no_supply_grace = 1
 		
 		
 		path = {
@@ -1192,11 +1160,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
 		}
-
-		no_supply_grace = 1
-
 		path = {
 			leads_to_tech = tech_logistics_company4
 			research_cost_coeff = 1
@@ -1247,10 +1211,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
 		}
-
-		no_supply_grace = 1
 		
 		path = {
 			leads_to_tech = tech_logistics_company_a
@@ -1856,10 +1817,6 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
-
-			marsh = {
-				movement = 0.05
-			}
 		}
 		
 		path = {
@@ -1867,7 +1824,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1948
 		folder = {
 			name = support_folder
@@ -1889,10 +1846,6 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
-
-			mountain = {
-				movement = 0.05
-			}
 		}
 		
 		path = {
@@ -1900,7 +1853,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1951
 		folder = {
 			name = support_folder
@@ -1922,14 +1875,9 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
-
-			hills = {
-				movement = 0.05
-			}
-
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1954
 		folder = {
 			name = support_folder
@@ -1955,17 +1903,13 @@ technologies = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
 		}
-
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
-		}
 		
 		path = {
 			leads_to_tech = tech_field_hospital_b
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1948
 		folder = {
 			name = support_folder
@@ -1990,17 +1934,13 @@ technologies = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
 		}
-
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
-		}
 		
 		path = {
 			leads_to_tech = tech_field_hospital_c
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1951
 		folder = {
 			name = support_folder
@@ -2026,11 +1966,7 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
-		}
-
-		research_cost = 2.0
+		research_cost = 1.5
 		start_year = 1954
 		folder = {
 			name = support_folder
@@ -2055,17 +1991,14 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
 		}
-
-		no_supply_grace = 1
 		
 		path = {
 			leads_to_tech = tech_logistics_company_b
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1948
 		folder = {
 			name = support_folder
@@ -2092,17 +2025,14 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
 		}
-
-		no_supply_grace = 1
 		
 		path = {
 			leads_to_tech = tech_logistics_company_c
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.75
+		research_cost = 1.5
 		start_year = 1951
 		folder = {
 			name = support_folder
@@ -2129,12 +2059,9 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
 		}
 
-		no_supply_grace = 1
-
-		research_cost = 2.0
+		research_cost = 1.5
 		start_year = 1954
 		folder = {
 			name = support_folder

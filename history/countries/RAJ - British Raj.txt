@@ -243,10 +243,10 @@ if = {
 	create_operative_leader = {
 		name = "Noor Inayat Khan"
 		gfx = GFX_portrait_noor_inayat_khan
-		traits = { operative_tough operative_linguist }
+		traits = { operative_tough }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { RAJ FRA }
+		nationalities = { RAJ }
 	}
 }

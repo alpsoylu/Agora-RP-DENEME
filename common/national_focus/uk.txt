@@ -1415,7 +1415,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1593,6 +1593,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					ENG = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				limit = {
+					ENG = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = dd_bonus
 				bonus = 1.0
@@ -1766,6 +1788,28 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					ENG = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				limit = {
+					ENG = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1
@@ -1797,6 +1841,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					ENG = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				limit = {
+					ENG = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 			navy_experience = 25
 			add_tech_bonus = {
 				name = uk_carrier_focus
@@ -1824,6 +1890,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					ENG = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				limit = {
+					ENG = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 			navy_experience = 25
 			add_tech_bonus = {
 				name = uk_battleship_focus
@@ -5502,7 +5590,7 @@ focus_tree = {
 	focus = {
 		id = peninsular_focus
 		prerequisite = { focus = sp_landward_forts_focus }
-		icon = GFX_goal_vietnam_strike_malaysia
+		icon = GFX_goal_generic_construction2
 		x = 0
 		y = 1
 		relative_position_id = sp_landward_forts_focus
@@ -9323,21 +9411,10 @@ focus_tree = {
 			factor = 50
 		}
 		allow_branch = {
-			OR = {
-				has_game_rule = {
-					rule = eng_fragmentation_status
-					option = ENG_FRAGMENTED
-				}
-				has_game_rule = {
-					rule = eng_fragmentation_status
-					option = ENG_FRAGMENTED_CELTIC_UNION
-				}
-				has_game_rule = {
-					rule = eng_fragmentation_status
-					option = ENG_FRAGMENTED_IRE_UNITED
-				}									
+			has_game_rule = {
+				rule = eng_fragmentation_status
+				option = ENG_FRAGMENTED
 			}
-			
 		}
 		available = {
 			is_puppet = no
@@ -9767,7 +9844,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
+					add_ideas = fascist_influence
 				}
 				country_event = { id = generic.1 }
 			}
@@ -9842,7 +9919,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
+					add_ideas = fascist_influence
 				}
 				country_event = { id = generic.1 }
 			}
@@ -9991,7 +10068,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
+					add_ideas = fascist_influence
 				}
 				country_event = { id = generic.1 }
 			}
@@ -10311,7 +10388,7 @@ focus_tree = {
 				country_event = { id = englandmod.8 days = 1 } 
 			}	
 			POR = {
-				add_timed_idea = { idea = fascist_influence days = 1095 }
+				add_ideas = fascist_influence
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -10484,7 +10561,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
+					add_ideas = fascist_influence
 				}
 				country_event = { id = generic.1 }
 			}
@@ -10566,7 +10643,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
+					add_ideas = fascist_influence
 				}
 				country_event = { id = generic.1 }
 			}
@@ -10684,7 +10761,7 @@ focus_tree = {
 		completion_reward = {
 			POL = {
 				add_opinion_modifier = { target = ENG modifier = ENG_diplomacy_focus }
-				add_timed_idea = { idea = fascist_influence days = 1095 }
+				add_ideas = fascist_influence
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -10943,7 +11020,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
+					add_ideas = fascist_influence
 				}
 				country_event = { id = generic.1 }
 			}
@@ -10954,7 +11031,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
+					add_ideas = fascist_influence
 				}
 				country_event = { id = generic.1 }
 			}
@@ -10965,7 +11042,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
+					add_ideas = fascist_influence
 				}
 				country_event = { id = generic.1 }
 			}
@@ -11420,7 +11497,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
+					add_ideas = fascist_influence
 				}
 				country_event = { id = generic.1 }
 			}
@@ -11465,7 +11542,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
+					add_ideas = fascist_influence
 				}
 				country_event = { id = generic.1 }
 			}
@@ -12812,24 +12889,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_god_save_the_king }	
 		available = {
 			is_subject = no
-			any_country = {
-				OR = {
-					country_exists = IRE
-					country_exists = SCO
-					country_exists = WLS
-					country_exists = NIR
-				}
-				exists = yes
-				NOT = {
-					OR = {
-						is_in_faction_with = ROOT
-						is_puppet_of = ROOT
-					}
-				}
-				
-			}
-
-			
+			country_exists = IRE
 			has_civil_war = no
 			NOT = { is_in_faction_with = IRE }
 		}
@@ -12845,9 +12905,6 @@ focus_tree = {
 			owns_state = 120
 		}
 		will_lead_to_war_with = IRE
-		will_lead_to_war_with = SCO
-		will_lead_to_war_with = NIR
-		will_lead_to_war_with = WLS
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 0
 		y = 2
@@ -13677,8 +13734,6 @@ focus_tree = {
 							has_full_control_of_state = 459
 							owns_state = 513
 							has_full_control_of_state = 513
-							owns_state = 860
-							has_full_control_of_state = 860
 							owns_state = 460
 							has_full_control_of_state = 460
 							owns_state = 514

@@ -98,11 +98,7 @@ form_andalusia_category = {
 			controls_state = 513
 			513 = {
 				compliance > 50
-			}
-			controls_state = 860
-			860 = {
-				compliance > 50
-			}
+			}				
 			controls_state = 459
 			459 = {
 				compliance > 50
@@ -157,7 +153,7 @@ form_andalusia_category = {
 		complete_effect = {				
 			every_state = {
 				limit = {
-					is_core_of = TUN
+					is_core_of = ALG
 				}
 				add_core_of = ROOT
 			}							

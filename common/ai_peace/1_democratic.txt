@@ -102,19 +102,6 @@ democratic_peace = {
 				}
 			}
 		}
-		modifier = { #Don't break up Italy
-			factor = 0
-			ITA = { exists = yes }
-			FROM = {
-				OR = {
-					tag = COR
-					tag = SAD
-					tag = SIC
-					tag = NAP
-					tag = VNZ
-				}
-			}
-		}
 		modifier = { #Don't liberate PRC or warlords or dumb nations. Hear me Brittany I called you dumb
 			factor = 0 #You didn't listen the first time
 			FROM = {
@@ -159,8 +146,7 @@ democratic_peace = {
 					tag = BUR
 					tag = TRA
 					tag = HRZ
-					tag = NFL		
-								
+					tag = NFL						
 				}
 			}
 		}
@@ -178,24 +164,9 @@ democratic_peace = {
 	#	}
 		#YALTA CONFERENCE
 		modifier = { #Release WGR if cores exist, let USSR have DDR
-			add = 600
+			factor = 500
 			FROM = {
 				tag = WGR
-			}
-		}
-		modifier = { #Release WGR if cores exist, let USSR have DDR
-			add = 600
-			FROM = {
-				tag = AUS
-			}
-		}
-		modifier = {# I rather you take stuff than release them scott free
-			factor = 0
-			FROM = {
-				OR = {
-					tag = GER
-					tag = BAY
-				}
 			}
 		}
 		modifier = { 
@@ -331,19 +302,6 @@ democratic_peace = {
 				}
 			}
 		}
-		modifier = { #Don't break up Italy
-			factor = 0
-			ITA = { exists = yes }
-			FROM = {
-				OR = {
-					tag = COR
-					tag = SAD
-					tag = SIC
-					tag = NAP
-					tag = VNZ
-				}
-			}
-		}
 		modifier = { #Don't puppet nations in civil war... this is too buggy.
 			factor = 0
 			FROM = { has_civil_war = yes }
@@ -387,7 +345,7 @@ democratic_peace = {
 		}
 		#YALTA CONFERENCE
 		modifier = { #Release WGR if cores exist, let USSR have DDR
-			add = 900
+			factor = 500
 			FROM = {
 				tag = WGR
 			}
@@ -403,6 +361,12 @@ democratic_peace = {
 				OR = {
 					tag = GER
 					tag = BAY
+				}
+				any_owned_state = {
+					OR = {
+						is_core_of = WGR
+						is_core_of = DDR
+					}
 				}
 			}
 		}
@@ -755,27 +719,6 @@ democratic_peace = {
 		}
 
 		modifier = {
-			add = 1000
-			FROM = {
-				is_core_of = WGR
-			}
-		}
-
-		modifier = {
-			add = 1000
-			FROM = {
-				is_core_of = HUN
-			}
-		}
-
-		modifier = {
-			add = 1000
-			FROM = {
-				is_core_of = AUS
-			}
-		}
-
-		modifier = {
 			factor = 0
 			tag = ENG
 			FROM = {
@@ -788,6 +731,12 @@ democratic_peace = {
 			factor = 0
 			FROM = {
 				tag = GER
+				any_owned_state = {
+					OR = {
+						is_core_of = WGR
+						is_core_of = DDR
+					}
+				}
 			}
 		}
 		modifier = {

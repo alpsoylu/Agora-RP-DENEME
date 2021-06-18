@@ -3966,8 +3966,6 @@ country_event = {
 			transfer_state = 554
 			transfer_state = 553
 			transfer_state = 680
-			transfer_state = 860
-			transfer_state = 861
 			country_event = { id = bftb_turkey.104 hours = 6 }
 		}
 		if = {
@@ -3998,8 +3996,6 @@ country_event = {
 		add_state_claim = 554
 		add_state_claim = 553
 		add_state_claim = 680
-		add_state_claim = 860
-		add_state_claim = 861
 		if = {
 			limit = {
 				ROOT = { NOT = { controls_state = 799 } }
@@ -4030,10 +4026,6 @@ country_event = {
 			transfer_state = 554
 			transfer_state = 553
 			transfer_state = 680
-			transfer_state = 860
-			transfer_state = 861
-			add_state_core = 860
-			add_state_core = 861
 			add_state_core = 553
 		}
 		if = {

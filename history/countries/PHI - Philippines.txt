@@ -117,7 +117,7 @@ add_ideas = {
 
 create_field_marshal = {
 	name = "Paulino Santo"
-	portrait_path = "gfx/leaders/r56_generic/r56_portrait_generic_land_south_america_camilo_alonso_vega.dds"
+	picture = "r56_portrait_PHI_Land_General_4.dds"
 	traits = { organisational_leader }
 	skill = 4
 	attack_skill = 3
@@ -128,7 +128,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Mateo Capinpin"
-	portrait_path = "gfx/leaders/r56_generic/r56_portrait_generic_land_south_america_Bartolome_Blanche.dds"
+	picture = "r56_portrait_PHI_Land_General_3.dds"
 	traits = { jungle_rat }
 	skill = 3
 	attack_skill = 2
@@ -140,7 +140,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Emilio Aguinaldo"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	picture = "r56_portrait_PHI_Land_General_2.dds"
 	traits = { trait_engineer }
 	skill = 2
 	attack_skill = 1
@@ -152,7 +152,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Artemio Ricarte"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	picture = "r56_portrait_PHI_Land_General_1.dds"
 	traits = { armor_officer }
 	skill = 2
 	attack_skill = 2
@@ -164,7 +164,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Enrique L. Jurado"
-	portrait_path = "gfx/leaders/r56_generic/r56_portrait_generic_admiral_south_america_1.dds"
+		picture = "r56_portrait_PHI_Navy_Admiral.dds"
 	traits = { blockade_runner spotter }
 	skill = 2
 	attack_skill = 1

@@ -516,7 +516,7 @@ focus_tree = {
 	focus = {
 		id = ITA_auxiliary_cruisers
 		icon = GFX_goal_generic_navy_cruiser
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ITA_cavagnari_plan
 		}
@@ -550,7 +550,7 @@ focus_tree = {
 	focus = {
 		id = ITA_naval_war_of_attrition
 		icon = GFX_goal_generic_navy_submarine
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ITA_cavagnari_plan
 		}
@@ -585,7 +585,7 @@ focus_tree = {
 	focus = {
 		id = ITA_naval_guerilla
 		icon = GFX_goal_generic_occupy_states_coastal
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ITA_auxiliary_cruisers
 		}
@@ -630,7 +630,7 @@ focus_tree = {
 	focus = {
 		id = ITA_la_decima
 		icon = GFX_goal_italy_decimal
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ITA_naval_war_of_attrition
 			focus = ITA_improve_the_fleet_projection
@@ -660,7 +660,7 @@ focus_tree = {
 	focus = {
 		id = ITA_improve_the_fleet_projection
 		icon = GFX_goal_generic_navy_battleship
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ITA_appoint_campioni
 		}
@@ -702,7 +702,7 @@ focus_tree = {
 	focus = {
 		id = ITA_develop_southern_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ITA_cavagnari_plan
 			focus = ITA_appoint_campioni
@@ -733,7 +733,7 @@ focus_tree = {
 	focus = {
 		id = ITA_develop_aircraft_carriers
 		icon = GFX_goal_generic_navy_carrier
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ITA_appoint_campioni
 		}
@@ -755,7 +755,7 @@ focus_tree = {
 	focus = {
 		id = ITA_shift_toward_an_offensive_force
 		icon = GFX_goal_generic_occupy_start_war
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ITA_develop_aircraft_carriers
 		}
@@ -951,7 +951,7 @@ focus_tree = {
 	focus = {
 		id = ITA_satisfy_the_branches_needs
 		icon = GFX_focus_research2
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ITA_naval_guerilla
 			focus = ITA_shift_toward_an_offensive_force
@@ -974,6 +974,28 @@ focus_tree = {
 					amount_research_slots < 6
 				}
 				add_research_slot = 1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ITA = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ITA = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

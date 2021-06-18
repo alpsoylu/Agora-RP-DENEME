@@ -1,14 +1,10 @@
 ideas = {
-	
-		country = {
+	hidden_effect = {
+	idea_sov_hidden_buffs = {
 
-		idea_mon_lkhumbe_forgived = {
-
-
-			picture = lkhumbe
 
 			allowed = {
-				original_tag = MON
+				original_tag = SOV
 			}
 
 			allowed_civil_war = {
@@ -16,7 +12,63 @@ ideas = {
 			}
 
 			modifier = {
-				stability_factor = -0.15
+				economy_cost_factor = 0.5
+			}
+		}
+	idea_ger_hidden_buffs = {
+
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1 
+			}
+		}
+	
+	
+	}
+		country = {
+
+		ger_cons_buff = {
+
+
+			picture = generic_coastal_navy
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = -0.1 
+				production_speed_dockyard_factor = 0.2 
+			}
+		}
+
+		sov_bear_buff = {
+
+
+			picture = russian_bear
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			production_speed_dockyard_factor = 0.1
 			}
 		}
 
@@ -37,6 +89,7 @@ ideas = {
 				local_non_core_manpower = 0.25
 				stability_factor = -0.2
 				war_support_factor = 0.2
+				justify_war_goal_time = -0.35
 			}
 		}
 
@@ -55,7 +108,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.35
-				justify_war_goal_time = -0.5
+				justify_war_goal_time = 0.5
 			}
 		}
 

@@ -81,15 +81,5 @@ areas = {
 			5
         }
 	}
-	germany_endsieg_front = {
-		strategic_regions = {
-			8
-			87
-			7
-			6
-			5
-			22
-        }
-	}
 
 }

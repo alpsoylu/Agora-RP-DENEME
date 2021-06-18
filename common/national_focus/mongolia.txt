@@ -55,7 +55,7 @@ focus_tree = {
 		mutually_exclusive = {
 		focus = MON_support_genden
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -91,7 +91,7 @@ focus_tree = {
 		mutually_exclusive = {
 		focus = MON_appoint_amar
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -127,7 +127,7 @@ focus_tree = {
 		prerequisite = {
 		focus = MON_appoint_choibalsan
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -151,7 +151,7 @@ focus_tree = {
 		focus = MON_eliminate_amar_supporters
 		focus = MON_amar_gets_purged
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -188,7 +188,7 @@ focus_tree = {
 		focus = MON_eliminate_amar_supporters
 		focus = MON_amar_gets_purged
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -218,7 +218,7 @@ focus_tree = {
 		prerequisite = {
 		focus = MON_strenghten_military_ties_with_ussr
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -245,7 +245,7 @@ focus_tree = {
 		mutually_exclusive = {
 		focus = MON_appoint_choibalsan
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -275,7 +275,7 @@ focus_tree = {
 		prerequisite = {
 		focus = MON_appoint_amar
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -299,7 +299,7 @@ focus_tree = {
 		prerequisite = {
 		focus = MON_forgive_the_victims_of_lkhumbe_affair
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -345,7 +345,7 @@ focus_tree = {
 		prerequisite = {
 		focus = MON_increase_the_popularity_of_amar
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -391,7 +391,7 @@ focus_tree = {
 		prerequisite = {
 		focus = MON_anti_stalinist_campaign
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -422,7 +422,7 @@ focus_tree = {
 		prerequisite = {
 		focus = MON_forgive_the_victims_of_lkhumbe_affair
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -460,7 +460,7 @@ focus_tree = {
 		mutually_exclusive = {
 		focus = MON_support_choibalsan
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -493,7 +493,7 @@ add_popularity = {
 		mutually_exclusive = {
 		focus = MON_stalinist_revolution
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -523,7 +523,7 @@ add_popularity = {
 		mutually_exclusive = {
 		focus = MON_peacefull_revolution
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -550,7 +550,7 @@ add_popularity = {
 	
 	
 	
-	#VERY ALT HIST GENDEN STUFF
+	#VERY ALT HIST GENDEN
 	focus = {
 		id = MON_dreams_of_a_greater_mongolia
 		icon = GFX_mongolia5
@@ -561,7 +561,7 @@ add_popularity = {
 		prerequisite = {
 		focus = MON_support_genden
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -582,7 +582,7 @@ add_popularity = {
 		prerequisite = {
 		focus = MON_dreams_of_a_greater_mongolia
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -604,7 +604,7 @@ add_popularity = {
 		prerequisite = {
 		focus = MON_send_an_embassador_to_japan
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -627,7 +627,7 @@ add_popularity = {
 		prerequisite = {
 		focus = MON_deal_for_inner_mongolia
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -650,7 +650,7 @@ add_popularity = {
 		prerequisite = {
 		focus = MON_dreams_of_a_greater_mongolia
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -673,7 +673,7 @@ add_popularity = {
 		prerequisite = {
 		focus = MON_deal_for_tannu_tuva
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -696,7 +696,7 @@ add_popularity = {
 		prerequisite = {
 		focus = MON_deal_for_tannu_tuva
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -722,7 +722,7 @@ add_popularity = {
 		prerequisite = {
 		focus = MON_legacy_of_genghis_khan
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -750,7 +750,7 @@ add_popularity = {
 		prerequisite = {
 		focus = MON_embrace_buddhism
 		}
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -760,6 +760,7 @@ add_popularity = {
 		remove_idea = MON_dreams_of_greater_mon
 		add_idea = MON_greater_mon
 		}
+		set_cosmetic_tag = MON_greater
 		}
 		relative_position_id = MON_deal_for_tannu_tuva
 		search_filters = { FOCUS_FILTER_POLITICAL }

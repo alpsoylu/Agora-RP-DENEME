@@ -48,7 +48,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2
 		
 		categories = {
 			naval_doctrine
@@ -95,7 +95,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -150,7 +150,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -220,7 +220,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -281,7 +281,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -331,7 +331,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -387,7 +387,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -432,10 +432,9 @@ technologies = {
 		# EFFECT #############
 		destroyer = {
 			max_organisation = 10
-			sub_detection = 0.10
+			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.05
-		convoy_retreat_speed = 0.05
 		#####
 		
 		path = {
@@ -447,7 +446,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -505,7 +504,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -570,7 +569,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -643,7 +642,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -709,7 +708,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -753,7 +752,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -805,7 +804,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -851,7 +850,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -930,7 +929,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2
 		
 		categories = {
 			naval_doctrine
@@ -988,7 +987,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1045,7 +1044,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1112,7 +1111,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1177,7 +1176,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1253,7 +1252,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1328,7 +1327,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1382,7 +1381,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1439,7 +1438,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1489,7 +1488,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1534,7 +1533,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1587,7 +1586,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1624,10 +1623,9 @@ technologies = {
 		# EFFECT #############
 		destroyer = {
 			max_organisation = 10
-			sub_detection = 0.10
+			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.05
-		convoy_retreat_speed = 0.05
 		#####
 		
 		path = {
@@ -1639,7 +1637,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1683,7 +1681,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1728,7 +1726,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1786,7 +1784,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2
 		
 		categories = {
 			naval_doctrine
@@ -1846,7 +1844,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1916,7 +1914,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -1987,7 +1985,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -2065,7 +2063,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -2140,7 +2138,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -2204,7 +2202,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -2280,12 +2278,11 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
 			cat_base_strike
-			submarine_doctrine
 		}
 		
 		folder = {
@@ -2334,12 +2331,11 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
 			cat_base_strike
-			submarine_doctrine
 		}
 		
 		folder = {
@@ -2398,12 +2394,11 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
 			cat_base_strike
-			submarine_doctrine
 		}
 		
 		folder = {
@@ -2455,12 +2450,11 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
 			cat_base_strike
-			submarine_doctrine
 		}
 		
 		folder = {
@@ -2518,7 +2512,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -2579,7 +2573,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -2629,10 +2623,9 @@ technologies = {
 		# EFFECT #############
 		destroyer = {
 			max_organisation = 10
-			sub_detection = 0.10
+			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.05
-		convoy_retreat_speed = 0.05
 		#####
 		
 		path = {
@@ -2644,7 +2637,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine
@@ -2710,7 +2703,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 3
+		research_cost = 2.7
 		
 		categories = {
 			naval_doctrine

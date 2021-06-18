@@ -506,18 +506,7 @@ careful_with_early_invasions = {
 			tag = FRA
 		}
 
-		OR = {
-			date < 1943.1.1
-			AND = {
-				GER = {
-					surrender_progress < 0.07
-				}
-				SOV = { 
-					has_war_with = GER 
-					surrender_progress < 0.01
-				}
-			}
-		}
+		date < 1943.1.1
 		NOT = {
 			SOV = { 
 				has_war_with = GER 
@@ -542,16 +531,13 @@ careful_with_early_invasions = {
 				surrender_progress > 0.07
 			}
 			date > 1943.1.1
-			GER = {
-				surrender_progress > 0.10
-			}
 		}
 	}
 
 	ai_strategy = {
 		type = invade
 		id = "ITA"			
-		value = -450
+		value = -500
 	}
 	
 	ai_strategy = {
@@ -563,19 +549,19 @@ careful_with_early_invasions = {
 	ai_strategy = {
 		type = invade
 		id = "SPR"			
-		value = -450
+		value = -500
 	}
 
 	ai_strategy = {
 		type = invade
 		id = "SPB"			
-		value = -450
+		value = -500
 	}
 
 	ai_strategy = {
 		type = invade
 		id = "SPC"			
-		value = -450
+		value = -500
 	}
 
 	ai_strategy = {
@@ -589,23 +575,11 @@ careful_with_early_invasions = {
 		id = "VIC"
 		value = -500
 	}
-
-	ai_strategy = {
-		type = invade
-		id = "BUL"			
-		value = -450
-	}
-
-	ai_strategy = {
-		type = invade
-		id = "ALB"			
-		value = -450
-	}
 	
 	ai_strategy = {
 		type = area_priority
 		id = scandinavia
-		value = -500
+		value = -300
 	}
 	
 }
@@ -676,12 +650,12 @@ ENG_trying_to_save_benelux_is_deathtrap = {
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = "HOL"
-		value = 250
+		value = 100
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = "BEL"
-		value = 25
+		value = 100
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
@@ -894,7 +868,7 @@ ENG_time_to_ditch_FRA = {
 	enable = {
 		FRA = {
 			has_capitulated = no
-			surrender_progress > 0.04
+			surrender_progress > 0.7
 		}
 		OR = {
 			NOT = { has_global_flag = FRA_already_surrendered }
@@ -910,22 +884,22 @@ ENG_time_to_ditch_FRA = {
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = FRA
-		value = 250
+		value = 100
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = BEL
-		value = 250
+		value = 100
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = HOL
-		value = 250
+		value = 100
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = LUX
-		value = 250
+		value = 100
 	}
 }
 
@@ -992,24 +966,19 @@ dont_get_sucked_into_FRA_and_die = {
 
 		date < 1941.9.9
 
-		FRA = {
-			surrender_progress > 0.02
-		}
-
 		NOT = { has_global_flag = FRA_already_surrendered }
 	}
-
 	abort_when_not_enabled = yes	
 
 	ai_strategy = {
 		type = front_unit_request
 		area = europe
-		value = -100
+		value = -60
 	}
 
 	ai_strategy = {
   		type = garrison
-   		value = 75
+   		value = 70
    	}
 }
 

@@ -2111,11 +2111,7 @@
 		}
 
 		available = {
-			controls_state = 459
-			controls_state = 460
-			controls_state = 513
-			controls_state = 860
-			controls_state = 514
+			
 		}
 		
 		bypass = {
@@ -2144,14 +2140,6 @@
 						}
 					}
 				}
-				860 = {
-					OWNER = {
-						OR = {
-							tag = ROOT
-							is_subject_of = ROOT
-						}
-					}
-				}
 			}
 		}
 
@@ -2163,7 +2151,6 @@
 			add_state_core = 459
 			add_state_core = 460
 			add_state_core = 513
-			add_state_core = 860
 			add_state_core = 514
 			if = {
 				limit = {
@@ -2668,8 +2655,10 @@
 			}			
 		}
 		completion_reward = {
-			add_ideas = tblra_volunteer_corps
-			#add_ideas = JAP_communist_volunteers
+			set_rule = {
+				can_send_volunteers = yes
+			}
+			add_ideas = JAP_communist_volunteers
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
@@ -3243,17 +3232,10 @@
 			}
 		}
 		bypass = {
-			OR = {
-				is_in_faction_with = ENG
-				NOT = {
-					has_completed_focus = FRA_little_entente
-				}
-				is_in_faction = yes
-				NOT = {
-					is_faction_leader = yes
-				}
+			is_in_faction_with = ENG
+			NOT = {
+				has_completed_focus = FRA_little_entente
 			}
-			
 		}
 		available_if_capitulated = no
 		ai_will_do = {
@@ -3445,7 +3427,7 @@
 	focus = {
 		id = FRA_invite_yugoslavia
 		icon = GFX_YUG_alliance
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = FRA_little_entente
 		}
@@ -4890,13 +4872,6 @@
 		}
 		x = 1
 		y = 1
-		available = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality 
-			}
-			
-		}
 		relative_position_id = FRA_oust_maurras
 		available_if_capitulated = no
 		ai_will_do = {
@@ -4950,19 +4925,6 @@
 				}
 			}
 			set_rule = { can_create_factions = yes }
-			if = {
-				limit = {
-					has_government = neutrality
-				}
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = yes
-					last_election = "1935.12.17"
-					election_frequency = 48
-				}
-				hold_election = ROOT					
-			}
-		
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
@@ -6835,7 +6797,7 @@
 	focus = {
 		id = FRA_invite_romania
 		icon = GFX_ROM_alliance
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = FRA_invite_yugoslavia
 		}
@@ -6856,10 +6818,12 @@
 					is_subject = yes
 					has_war_with = ROOT
 					is_in_faction_with = ROOT
-					is_in_faction = yes	
+					is_in_faction = yes
+					
+				}
+				OR = {
 					has_government = communism
 					has_government = fascism
-					
 				}
 			}
 		}
@@ -9665,10 +9629,10 @@
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 10
 					instant_build = yes
 				}
 			}
